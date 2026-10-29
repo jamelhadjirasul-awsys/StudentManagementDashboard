@@ -1,10 +1,20 @@
-
-// Mock "database" table of students
+// Mock "database" table of students (each record has an id, like a saved record would)
 export const mockStudentDb = [
-  { firstName: "Jam", lastName: "Mel", email: "jam.mel@email.com" },
-  { firstName: "Mel", lastName: "Ja", email: "mel.ja@email.com" },
+  {
+    id: Date.now(),
+    firstName: "Leslie",
+    lastName: "Andrews",
+    email: "leslie.andrews@example.com",
+  },
+  {
+    id: Date.now() + 1,
+    firstName: "Emma",
+    lastName: "Baumgarten",
+    email: "emma.baumgarten@example.com",
+  },
 ];
 
+// Simulates a GET request: returns the current array of students
 export function getStudentsAPI() {
   return mockStudentDb;
 }
