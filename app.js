@@ -15,6 +15,7 @@
         const row = document.createElement("tr");
         const cell = document.createElement("td");
         cell.colSpan = 4;
+        cell.className = "empty-cell";
         cell.textContent = "No student records found.";
         row.appendChild(cell);
         studentTableBody.appendChild(row);

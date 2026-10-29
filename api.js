@@ -1,4 +1,4 @@
-// Mock "database" table of students (each record has an id, like a saved record would)
+// Mock "database" table of students
 export const mockStudentDb = [
   // {
   //   id: Date.now(),
